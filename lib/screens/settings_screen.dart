@@ -1,9 +1,8 @@
-import 'package:Meals/components/main_drawer.dart';
-import 'package:Meals/models/settings.dart';
+import '../components/main_drawer.dart';
+import '../models/settings.dart';
 import 'package:flutter/material.dart';
 
 class SettingsScreen extends StatefulWidget {
-
   final Function(Settings) onSettingsChanged;
   final Settings settings;
 
@@ -14,7 +13,6 @@ class SettingsScreen extends StatefulWidget {
 }
 
 class _SettingsScreenState extends State<SettingsScreen> {
-
   Settings settings;
 
   Widget _createSwitch(String title, String subtitle, bool value, Function(bool) onChange) {
@@ -22,7 +20,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
       title: Text(title),
       subtitle: Text(subtitle),
       value: value,
-      onChanged: (value){ 
+      onChanged: (value) {
         onChange(value);
         widget.onSettingsChanged(settings);
       },
@@ -75,7 +73,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     settings.isVegan = value;
                   }),
                 ),
-                
                 _createSwitch(
                   "Refeições Vegetarianas",
                   "Só exibi refeições vegetarianas!",

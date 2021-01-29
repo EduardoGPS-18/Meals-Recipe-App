@@ -1,13 +1,12 @@
-import 'package:Meals/models/meal.dart';
+import '../models/meal.dart';
 import 'package:flutter/material.dart';
 
 class MealDetailScreen extends StatelessWidget {
-
   final Function(Meal) onToggleFavorite;
   final Function(Meal) isFavorite;
 
   const MealDetailScreen(this.onToggleFavorite, this.isFavorite);
-  
+
   Widget _createSectionTitle(BuildContext context, String title) => Container(
         margin: EdgeInsets.symmetric(vertical: 10),
         child: Text(
@@ -39,7 +38,7 @@ class MealDetailScreen extends StatelessWidget {
         title: Text(meal.title),
       ),
       body: SingleChildScrollView(
-          child: Column(children: <Widget>[
+        child: Column(children: <Widget>[
           Container(
             height: 300,
             width: double.infinity,
@@ -69,24 +68,22 @@ class MealDetailScreen extends StatelessWidget {
             ),
           ),
           _createSectionTitle(context, "Passos"),
-          _createSectionContainer(
-            ListView.builder(
-              itemCount: meal.steps.length,
-              itemBuilder: (ctx, index) {
-                return Column(
-                  children: <Widget>[
-                    ListTile(
-                      leading: CircleAvatar(
-                        child: Text((index + 1).toString()),
-                      ),
-                      title: Text(meal.steps[index]),
+          _createSectionContainer(ListView.builder(
+            itemCount: meal.steps.length,
+            itemBuilder: (ctx, index) {
+              return Column(
+                children: <Widget>[
+                  ListTile(
+                    leading: CircleAvatar(
+                      child: Text((index + 1).toString()),
                     ),
-                    Divider(),
-                  ],
-                );
-              },
-            )
-          ),
+                    title: Text(meal.steps[index]),
+                  ),
+                  Divider(),
+                ],
+              );
+            },
+          )),
         ]),
       ),
       floatingActionButton: FloatingActionButton(

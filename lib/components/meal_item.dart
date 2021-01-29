@@ -1,5 +1,5 @@
-import 'package:Meals/models/meal.dart';
-import 'package:Meals/utils/app-routes.dart';
+import '../models/meal.dart';
+import '../utils/app-routes.dart';
 import 'package:flutter/material.dart';
 
 class MealItem extends StatelessWidget {
@@ -11,7 +11,7 @@ class MealItem extends StatelessWidget {
     Navigator.of(context).pushNamed(
       AppRoutes.MEAL_DETAILS,
       arguments: meal,
-    ).then((result) => print(result));
+    );
   }
 
   @override

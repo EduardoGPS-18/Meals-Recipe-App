@@ -1,6 +1,6 @@
-import 'package:Meals/models/meal.dart';
 import 'package:flutter/material.dart';
- 
+
+import '../models/meal.dart';
 import '../models/category.dart';
 
 const DUMMY_CATEGORIES = const [
@@ -66,14 +66,7 @@ const DUMMY_MEALS = const [
     imageUrl:
         'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Spaghetti_Bolognese_mit_Parmesan_oder_Grana_Padano.jpg/800px-Spaghetti_Bolognese_mit_Parmesan_oder_Grana_Padano.jpg',
     duration: 20,
-    ingredients: [
-      '4 Tomatoes',
-      '1 Tablespoon of Olive Oil',
-      '1 Onion',
-      '250g Spaghetti',
-      'Spices',
-      'Cheese (optional)'
-    ],
+    ingredients: ['4 Tomatoes', '1 Tablespoon of Olive Oil', '1 Onion', '250g Spaghetti', 'Spices', 'Cheese (optional)'],
     steps: [
       'Cut the tomatoes and the onion into small pieces.',
       'Boil some water - add salt to it once it boils.',
@@ -94,16 +87,9 @@ const DUMMY_MEALS = const [
     title: 'Toast Hawaii',
     cost: Cost.Cheap,
     complexity: Complexity.Simple,
-    imageUrl:
-        'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',
+    imageUrl: 'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',
     duration: 10,
-    ingredients: [
-      '1 Slice White Bread',
-      '1 Slice Ham',
-      '1 Slice Pineapple',
-      '1-2 Slices of Cheese',
-      'Butter'
-    ],
+    ingredients: ['1 Slice White Bread', '1 Slice Ham', '1 Slice Pineapple', '1-2 Slices of Cheese', 'Butter'],
     steps: [
       'Butter one side of the white bread',
       'Layer ham, the pineapple and cheese on the white bread',
@@ -120,17 +106,9 @@ const DUMMY_MEALS = const [
     title: 'Classic Hamburger',
     cost: Cost.Fair,
     complexity: Complexity.Simple,
-    imageUrl:
-        'https://cdn.pixabay.com/photo/2014/10/23/18/05/burger-500054_1280.jpg',
+    imageUrl: 'https://cdn.pixabay.com/photo/2014/10/23/18/05/burger-500054_1280.jpg',
     duration: 45,
-    ingredients: [
-      '300g Cattle Hack',
-      '1 Tomato',
-      '1 Cucumber',
-      '1 Onion',
-      'Ketchup',
-      '2 Burger Buns'
-    ],
+    ingredients: ['300g Cattle Hack', '1 Tomato', '1 Cucumber', '1 Onion', 'Ketchup', '2 Burger Buns'],
     steps: [
       'Form 2 patties',
       'Fry the patties for c. 4 minutes on each side',
@@ -149,8 +127,7 @@ const DUMMY_MEALS = const [
     title: 'Wiener Schnitzel',
     cost: Cost.Expensive,
     complexity: Complexity.Medium,
-    imageUrl:
-        'https://cdn.pixabay.com/photo/2018/03/31/19/29/schnitzel-3279045_1280.jpg',
+    imageUrl: 'https://cdn.pixabay.com/photo/2018/03/31/19/29/schnitzel-3279045_1280.jpg',
     duration: 60,
     ingredients: [
       '8 Veal Cutlets',
@@ -182,8 +159,7 @@ const DUMMY_MEALS = const [
     title: 'Salad with Smoked Salmon',
     cost: Cost.Expensive,
     complexity: Complexity.Simple,
-    imageUrl:
-        'https://cdn.pixabay.com/photo/2016/10/25/13/29/smoked-salmon-salad-1768890_1280.jpg',
+    imageUrl: 'https://cdn.pixabay.com/photo/2016/10/25/13/29/smoked-salmon-salad-1768890_1280.jpg',
     duration: 15,
     ingredients: [
       'Arugula',
@@ -214,8 +190,7 @@ const DUMMY_MEALS = const [
     title: 'Delicious Orange Mousse',
     cost: Cost.Cheap,
     complexity: Complexity.Difficult,
-    imageUrl:
-        'https://cdn.pixabay.com/photo/2017/05/01/05/18/pastry-2274750_1280.jpg',
+    imageUrl: 'https://cdn.pixabay.com/photo/2017/05/01/05/18/pastry-2274750_1280.jpg',
     duration: 240,
     ingredients: [
       '4 Sheets of Gelatine',
@@ -247,8 +222,7 @@ const DUMMY_MEALS = const [
     title: 'Pancakes',
     cost: Cost.Cheap,
     complexity: Complexity.Simple,
-    imageUrl:
-        'https://cdn.pixabay.com/photo/2018/07/10/21/23/pancake-3529653_1280.jpg',
+    imageUrl: 'https://cdn.pixabay.com/photo/2018/07/10/21/23/pancake-3529653_1280.jpg',
     duration: 20,
     ingredients: [
       '1 1/2 Cups all-purpose Flour',
@@ -276,8 +250,7 @@ const DUMMY_MEALS = const [
     title: 'Creamy Indian Chicken Curry',
     cost: Cost.Fair,
     complexity: Complexity.Medium,
-    imageUrl:
-        'https://cdn.pixabay.com/photo/2018/06/18/16/05/indian-food-3482749_1280.jpg',
+    imageUrl: 'https://cdn.pixabay.com/photo/2018/06/18/16/05/indian-food-3482749_1280.jpg',
     duration: 35,
     ingredients: [
       '4 Chicken Breasts',
@@ -307,8 +280,7 @@ const DUMMY_MEALS = const [
     title: 'Chocolate Souffle',
     cost: Cost.Cheap,
     complexity: Complexity.Difficult,
-    imageUrl:
-        'https://cdn.pixabay.com/photo/2014/08/07/21/07/souffle-412785_1280.jpg',
+    imageUrl: 'https://cdn.pixabay.com/photo/2014/08/07/21/07/souffle-412785_1280.jpg',
     duration: 45,
     ingredients: [
       '1 Teaspoon melted Butter',
@@ -354,16 +326,9 @@ const DUMMY_MEALS = const [
     title: 'Asparagus Salad with Cherry Tomatoes',
     cost: Cost.Expensive,
     complexity: Complexity.Simple,
-    imageUrl:
-        'https://cdn.pixabay.com/photo/2018/04/09/18/26/asparagus-3304997_1280.jpg',
+    imageUrl: 'https://cdn.pixabay.com/photo/2018/04/09/18/26/asparagus-3304997_1280.jpg',
     duration: 30,
-    ingredients: [
-      'White and Green Asparagus',
-      '30g Pine Nuts',
-      '300g Cherry Tomatoes',
-      'Salad',
-      'Salt, Pepper and Olive Oil'
-    ],
+    ingredients: ['White and Green Asparagus', '30g Pine Nuts', '300g Cherry Tomatoes', 'Salad', 'Salt, Pepper and Olive Oil'],
     steps: [
       'Wash, peel and cut the asparagus',
       'Cook in salted water',

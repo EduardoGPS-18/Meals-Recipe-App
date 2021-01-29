@@ -1,4 +1,4 @@
-import 'package:Meals/utils/app-routes.dart';
+import '../utils/app-routes.dart';
 import 'package:flutter/material.dart';
 
 class MainDrawer extends StatelessWidget {
